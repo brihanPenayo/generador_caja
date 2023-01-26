@@ -3,7 +3,6 @@
   padding: 0;
   font-family: 'Courier New';
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 .box-area {
@@ -16,18 +15,36 @@
 .flexDiv {
   display: flex;
   gap: 1rem;
-  padding: 3rem;
-  min-width: 300px;
-  max-width: 600px;
+  padding: 1rem;
   margin: 0 auto;
+  justify-content: center;
 }
 
-.flexDiv > input{
-  flex: 1;
+h1 {
+  margin: 2rem;
 }
 
+input,
+select,
+button {
+  height: 2rem;
+  text-align: center;
+}
 
-.flexDiv > .selectInpt {
-  flex: 3;
-  background-color: aqua;
+button {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+button:active {
+  transform: scale(1.05);
+}
+
+input[type="number"] {
+  width: 60px;
+}
+
+.selectInpt {
+  width: 100px;
 }

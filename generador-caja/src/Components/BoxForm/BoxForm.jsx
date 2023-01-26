@@ -27,6 +27,7 @@ const BoxForm = () => {
     return (
         <>
             <form onSubmit={crearCuadro}>
+                <h1>Generador de Cajas</h1>
                 <Input box={cuadro} onChange={handleCuadro} />
             </form>
             <Box box={cuadros} />

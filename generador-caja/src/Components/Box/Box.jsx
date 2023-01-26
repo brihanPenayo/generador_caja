@@ -9,7 +9,7 @@ const Box = ({ box }) => {
                         background: `${item.color}`,
                         width: `${item.width}px`,
                         height: `${item.height}px`
-                    }} key={idx}>{item.color}</div>
+                    }} key={idx}></div>
                 );
             })}
         </div >
